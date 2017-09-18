@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kamadayuji.hennnasiori.MainSchedule_sub1"
+    tools:showIn="@layout/activity_main_schedule_sub1">
+
+    <EditText
+        android:id="@+id/travel_name"
+        android:layout_width="435dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="59dp"
+        android:elevation="24dp"
+        android:ems="10"
+        android:hint="旅行名"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <EditText
+        android:id="@+id/datePicker"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/datePicker_button1"
+        android:layout_alignBottom="@+id/datePicker_button1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="イベント開始日"
+        android:textColor="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="65dp"
+        />
+
+    <EditText
+        android:id="@+id/datePicker_end"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/datePicker_button2"
+        android:layout_alignStart="@+id/datePicker"
+        android:ems="10"
+        android:inputType="date"
+        android:text="イベント終了日"
+        android:textColor="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <Button
+        android:id="@+id/datePicker_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日付選択"
+        android:layout_below="@+id/travel_name"
+        android:layout_alignEnd="@+id/travel_name" />
+
+    <Button
+        android:id="@+id/datePicker_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日付選択"
+        android:layout_below="@+id/datePicker_button1"
+        android:layout_alignStart="@+id/datePicker_button1" />
+</RelativeLayout>
